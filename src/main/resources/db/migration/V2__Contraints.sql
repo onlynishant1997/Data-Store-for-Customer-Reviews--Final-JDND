@@ -1,0 +1,2 @@
+alter table review add constraint review_product_fk foreign key (product_id) references product (id);
+alter table comment add constraint comment_review_fk foreign key (review_id) references review (id);
